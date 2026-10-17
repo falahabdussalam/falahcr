@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+    background-color: #FDFBF7;
+  }
+
+  body {
+    background-color: #FDFBF7;
+    color: #1A0309;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Refined, premium scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FDFBF7;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D5C6B1;
+    border-radius: 9999px;
+    border: 2px solid #FDFBF7;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4A0A1A;
+  }
+}
+
+@layer utilities {
+  .card-cream {
+    background-color: #FFFFFF;
+    border: 1px solid #E5DACB;
+    box-shadow: 0 4px 20px -2px rgba(59, 7, 20, 0.04);
+  }
+
+  .card-cream-hover {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-cream-hover:hover {
+    border-color: #4A0A1A;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -4px rgba(59, 7, 20, 0.08);
+  }
+
+  .card-maroon {
+    background-color: #2A050E;
+    color: #FDFBF7;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
